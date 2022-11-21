@@ -8,6 +8,7 @@ const Note = require("../models/Note");
 router.get("/fetchallnotes", fetchuser, async (req, res) => {
   try {
     const notes = await Note.find({ user: req.user.id });
+    console.log(notes);
     res.json(notes);
   } catch (error) {
     console.error(error);
