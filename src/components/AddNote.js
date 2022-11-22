@@ -7,7 +7,7 @@ function AddNote() {
   const [note, setNote] = useState({
     title: "",
     description: "",
-    tag: "Default",
+    tag: "",
   });
   const handleClick = (e) => {
     e.preventDefault();
